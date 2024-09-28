@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수신자 추가 및 삭제"
+        android:fontFamily="@font/woo_bro"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:id="@+id/recipients_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_add_recipient"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#70cce1"
+            android:fontFamily="@font/woo_bro"
+            android:text="수신자 추가" />
+
+        <Button
+            android:id="@+id/button_remove_recipient"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fe9882"
+            android:fontFamily="@font/woo_bro"
+            android:text="수신자 삭제" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="381dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/woo_bro"
+        android:hint="메시지 내용"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button_save_recipients"
+        android:layout_width="131dp"
+        android:fontFamily="@font/woo_bro"
+        android:layout_height="wrap_content"
+        android:text="저장" />
+
+    <Button
+        android:id="@+id/button_clear_recipients"
+        android:layout_width="131dp"
+        android:fontFamily="@font/woo_bro"
+        android:layout_height="wrap_content"
+        android:text="초기화" />
+
+    <Button
+        android:id="@+id/buttonSendSMS"
+        android:layout_width="131dp"
+        android:fontFamily="@font/woo_bro"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SMS 보내기" />
+
+</LinearLayout>
